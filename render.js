@@ -54,7 +54,7 @@ class Renderer {
 				return null;
 		}
 
-		this.gl.shaderSource(shader, theSource);
+		this.gl.shaderSource(shader, source);
 		this.gl.compileShader(shader);
 
 		if (!this.gl.getShaderParameter(shader, this.gl.COMPILE_STATUS))
